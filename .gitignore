@@ -1,0 +1,74 @@
+# Criado por https://www.toptal.com/developers/gitignore/api/rails
+# Edite em https://www.toptal.com/developers/gitignore?templates=rails
+
+### Rails ###
+* .rbc
+capivara - *. html
+.rspec
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/db/*.sqlite3-[0-9]*
+/ public / system
+/cobertura/
+/ spec / tmp
+* .orig
+rerun.txt
+pickle-email - *. html
+
+# Ignore todos os arquivos de log e tempfiles.
+/registro/*
+/ tmp / *
+! /log/.keep
+! /tmp/.keep
+
+# TODO Comente esta regra se concordar com o upload de segredos para o repo
+config / initializers / secret_token.rb
+config / master.key
+
+# Incluir apenas se você tiver segredos de produção neste arquivo, que não é mais um padrão do Rails
+# config / secrets.yml
+
+# dotenv, dotenv-rails
+# TODO Comente essas regras se as variáveis ​​de ambiente podem ser confirmadas
+.env
+.env. *
+
+## Normalização do ambiente:
+/.agrupar
+/ vendor / bundle
+
+# todos devem ser verificados para normalizar o ambiente:
+# Gemfile.lock, .ruby-version, .ruby-gemset
+
+# a menos que seja compatível com rvm <1.11.0 ou faça algo sofisticado, ignore:
+.rvmrc
+
+# se estiver usando bower-rails, ignore os arquivos bower.json de caminho bower_components padrão
+/ vendor / assets / bower_components
+* .bowerrc
+bower.json
+
+# Ignorar as configurações do ambiente de alimentação
+.powenv
+
+# Ignore o arquivo de histórico de comando Byebug.
+.byebug_history
+
+# Ignore node_modules
+node_modules /
+
+# Ignore pacotes javascript pré-compilados
+/ public / packs
+/ public / packs-test
+/ public / assets
+
+# Ignorar arquivos yarn
+/yarn-error.log
+yarn-debug.log *
+.yarn-integridade
+
+# Ignorar arquivos enviados em desenvolvimento
+/armazenamento/*
+! /storage/.keep
+
+# Fim de https://www.toptal.com/developers/gitignore/api/rails
